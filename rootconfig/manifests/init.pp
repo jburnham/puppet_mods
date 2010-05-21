@@ -1,4 +1,5 @@
 class rootconfig {
+    include remotefile
 
     File {
         owner => root,
@@ -6,10 +7,11 @@ class rootconfig {
         mode => 0644,
     }
 
-    file { "/root/.vimrc":
-        content => template("rootconfig/vimrc.erb"),
+    remotefile::add { "/root/.vimrc":
+        remoteurl => "http://gist.github.com/raw/406927/.vimrc",
     }
-    file { "/root/.screenrc":
-        content => template("rootconfig/screenrc.erb"),
+
+    remotefile::add { "/root/.screenrc":
+        remoteurl => "http://gist.github.com/raw/406926/.screenrc",
     }
 }
