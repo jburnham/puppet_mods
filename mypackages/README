@@ -1,0 +1,2 @@
+Basic README for mypackages
+Test in this directory by running [sudo] ./test/run.sh [noop|reallyrun]

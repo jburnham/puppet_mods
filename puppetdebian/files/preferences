@@ -1,0 +1,7 @@
+Package: puppet
+Pin: release a=lenny-backports
+Pin-Priority: 999
+
+Package: facter
+Pin: release a=lenny-backports
+Pin-Priority: 999

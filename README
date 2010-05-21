@@ -1,0 +1,5 @@
+A collection of puppet modules I use to setup my servers.
+
+aptitude update && aptitude -y install git-core && git clone git@github.com:jburnham/puppet_mods.git
+
+cd puppet_mods && runonce.sh
